@@ -27,12 +27,28 @@ android {
 }
 
 dependencies {
+    implementation 'com.willowtreeapps.hyperion:hyperion-core:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-attr:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-measurement:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-disk:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-recorder:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-phoenix:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-crash:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-shared-preferences:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-geiger-counter:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-timber:0.9.27'
+    implementation 'com.willowtreeapps.hyperion:hyperion-build-config:0.9.27'
+    implementation 'org.apache.commons:commons-lang3:3.0'
+    //implementation of ZipFile file
+    implementation 'org.slf4j:slf4j-api:1.7.25'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
     implementation 'com.android.support:appcompat-v7:28.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation files('libs/zip4j_1.3.2.jar')
 }
 repositories {
     mavenCentral()

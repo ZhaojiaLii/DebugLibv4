@@ -1,5 +1,6 @@
 package com.example.testtesttest
 
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.testlib.testClass
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
         val test = testClass()
         test.ToastShow(this)
+
 
     }
 }
